@@ -1,0 +1,62 @@
+.room-details {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .Logout{
+    background-color: rgba(0, 0, 0, 0.769);
+    box-shadow: 0px 3px 6px #0000005f;
+    border-radius: 4px;
+    width: 200px;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    font-family: Roboto, Medium;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    }
+
+    .Logout:hover{
+      opacity: 80%;
+    }
+
+    .vc{
+      background-color: rgba(0, 0, 0, 0.769);
+      box-shadow: 0px 3px 6px #0000005f;
+      border-radius: 4px;
+      width: 200px;
+      color: rgb(250, 250, 250);
+      text-align: center;
+      font-family: Roboto, Medium;
+      letter-spacing: 1.25px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .vc:hover{
+      opacity: 80%;
+    }
+
+    .img{
+      width: 100px;
+      height: auto;
+    }
+
+  }
+
+  .parameter {
+    margin-bottom: 20px; 
+  }
+
+  label {
+    display: inline-block;
+    width: 150px; 
+  }
+
+  .parameter-value {
+    display: inline-block;
+    margin-left: 10px; /* Adjust the margin as needed for spacing */
+  }
+  

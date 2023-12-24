@@ -1,0 +1,21 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400&family=Lobster+Two:ital@1&family=Pacifico&display=swap" rel="stylesheet">
+
+<div class="top-bar">
+    <span class="page-title">ROOMS</span>
+  </div>
+
+  <div class="room-list">
+    <div class="room-card" *ngFor="let room of rooms" (click)="navigateToRoomPage(room.id)">
+      
+      <div class="img_name">
+      <img src="{{ room.imageUrl }}" alt="{{ room.name }}">
+      <h3>{{ room.name }}</h3></div>
+      <div class="temp_light_time">
+        <p class="temp"><img src="https://static.vecteezy.com/system/resources/thumbnails/012/002/067/small_2x/air-conditioner-icon-logo-design-vector.jpg" alt="temp">{{room.temp}}</p>
+        <p class="speed"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Ceiling_fan.svg/2560px-Ceiling_fan.svg.png" alt="fan">{{room.fan_speed}}</p>
+        <p class="light_time"><img src="https://static.vecteezy.com/system/resources/thumbnails/007/882/689/small/bulb-logo-vector.jpg" alt="light">{{room.light_time}}</p>
+      </div>
+    </div>
+  </div>

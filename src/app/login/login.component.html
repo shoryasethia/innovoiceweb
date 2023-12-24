@@ -1,0 +1,53 @@
+<div class="wrap-login">
+    <div class="container">
+        <form class="" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <mat-card class="login-box">      
+                    <img src="https://www.innovoice.fi/wp-content/uploads/2023/06/Innovoice_logo_black.png" alt="Logo">               
+                <mat-card-content>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="email" placeholder="Enter your email" formControlName="email" required class="form-field">
+                        <mat-error *ngIf="loginForm.get('email')?.hasError('required')">Email is required</mat-error>
+                        <mat-error *ngIf="loginForm.get('email')?.hasError('email')">Invalid email format</mat-error>
+                    </mat-form-field>
+                       
+                    <mat-form-field appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input matInput type="password" placeholder="Enter your password" formControlName="password" required class="form-field">
+                        <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Password is required</mat-error>
+                        <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')">Password should be at least 6 characters long</mat-error>
+                    </mat-form-field>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary">Login</button>
+                </mat-card-actions>
+            </mat-card>
+        </form>
+    </div>
+</div>
+  
+  <!-- <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <img mat-card-avatar src="https://example.com/logo.png" alt="Logo">
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" placeholder="Enter your email" required>
+        <mat-error *ngIf="loginForm.get('email')">
+          Invalid email format
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Enter your password" required>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Login</button>
+    </mat-card-actions>
+  </mat-card>
+</form> -->
+
+  
